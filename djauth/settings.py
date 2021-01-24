@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'modeltranslation',
     'currencies',
     'b_code',
+    't_sms',
 
 ]
 
