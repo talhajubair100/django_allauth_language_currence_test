@@ -28,6 +28,8 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('', include('acc.urls')),
     path('currencies/', include('currencies.urls')),
+    path('b_code/', include('b_code.urls')),
+
     #path('accounts/signup/company/', AccountSignupView.as_view(), name='company_signup'),
     #path('accounts/signup/company/', teachers.TeacherSignUpView.as_view(), name='company_signup'),
 ]
@@ -36,4 +38,4 @@ urlpatterns = [
 
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-#urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
